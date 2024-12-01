@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hehehe</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #6cc8f3;
+            color: #2992bb;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #555050;
+            color: white;
+            text-align: center;
+            padding: 4rem;
+            border-bottom: 5px solid #5f6265;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 6rem;
+            font-family: 'Comic Sans MS', cursive;
+            text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+        }
+
+        header p {
+            font-size: 2rem;
+            font-style: italic;
+        }
+
+        /* Scroll Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Content Area */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5rem 2rem;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.5s;
+        }
+
+        .photo {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            background-image: url('https://tr.rbxcdn.com/180DAY-63a2b9e0f7081568dae19c0c2bd59070/420/420/Hat/Webp/noFilter');
+            background-size: cover;
+            background-position: center;
+            margin: 2rem 0;
+            border: 6px solid #f8e049;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin: 2rem 0;
+            color: #525455;
+            font-family: 'Comic Sans MS', sans-serif;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            animation-delay: 1s;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: #ffffff;
+            max-width: 700px;
+            font-family: 'Comic Sans MS', sans-serif;
+            letter-spacing: 0.5px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 1.5s;
+        }
+
+        /* Skill Section */
+        .skills {
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 2s;
+        }
+
+        .skills h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #414141;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Links Section */
+        .links {
+            margin: 4rem auto;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 2.5s;
+        }
+
+        .links h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333333;
+        }
+
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .links ul li {
+            margin: 1rem 0;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 12px 24px;
+            background-color: transparent;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .links a:hover {
+            color: #62d6f0;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #5d5e61;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+        }
+
+        .glitter {
+            background: url('https://tr.rbxcdn.com/180DAY-63a2b9e0f7081568dae19c0c2bd59070/420/420/Hat/Webp/noFilter') repeat;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HELLO</h1>
+    <p>Welcome to my website</p>
+</header>
+
+<div class="container">
+    <div class="photo"></div>
+    <h2>About Me</h2>
+    <p>Hi, my name is Pritha. I love to take life easy while constantly learning new things. I'm passionate about learning how to code and reading. (It's been 1 month since I started self-learning)</p>
+
+    <h2>What I Do</h2>
+    <p>Whether it's coding, electronics, or simply enjoying a good book, I enjoy the process of discovering new things and working on exciting projects.</p>
+</div>
+
+<div class="skills">
+    <h3>Skills & Hobbies</h3>
+    <ul>
+        <li>Software Development</li>
+        <li>Building Electronics stuff (BCI- emotion detector)</li>
+        <li>Nogasm (a vibrator controlled by Arduino that stops right when you're about to come)</li>
+        <li>Reading</li>
+        <li>Music</li>
+    </ul>
+</div>
+
+<div class="links">
+    <h3>My Favorite Memes:</h3>
+    <ul>
+        <li><a href="https://youtu.be/CBEvfZu4HE4?si=bFLvs8-OLt7AZX7M" target="_blank">shimmyshimmy</a></li>
+        <li><a href="https://youtu.be/xvFZjo5PgG0?si=atEIVGC_0tkqeQ9g" target="_blank">PLS CLICK THIS ILY</a></li>
+        <li><a href="https://youtu.be/nz-V3g6-1KQ?si=hrtWMXyrlOK5c2Ne" target="_blank">tingalingalingalingting</a></li>
+    </ul>
+</div>
+
+<footer>
+    <p>popipioipioipioppioipioipioipioipioipi</p>
+</footer>
+
+<div class="glitter"></div>
+
+</body>
+</html>
